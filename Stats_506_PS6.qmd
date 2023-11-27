@@ -1,0 +1,21 @@
+---
+title: "Stats_506_PS6"
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+```{r}
+library(parallel)
+library(parallelly)
+```
+
+```{r}
+cl <- makeCluster(detectCores())
+```
+
+```{r}
+clusterEvalQ(cl, 2 + 2)
+```
+
